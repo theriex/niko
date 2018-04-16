@@ -1,0 +1,24 @@
+html {
+  min-height: 100%; margin:0; padding:0;
+}
+
+body {
+  margin:0px;
+  color:#111111;
+  height:100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('../img/sitebg.png');
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  font-size:large;
+  line-height:1.8;
+}
+
+A:link {text-decoration:none; color:#803c00; }
+A:visited {text-decoration:none; color:#803c00; }
+A:active {text-decoration:none; color:#803c00; }
+A:hover {text-decoration:underline; color:#ec6e00; }
+
+#namediv {font-family:"Shadows Into Light Two", cursive; 
+  font-size:x-large; font-weight:bold; padding:10px; }
