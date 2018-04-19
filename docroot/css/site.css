@@ -20,5 +20,6 @@ A:visited {text-decoration:none; color:#803c00; }
 A:active {text-decoration:none; color:#803c00; }
 A:hover {text-decoration:underline; color:#ec6e00; }
 
-#namediv {font-family:"Shadows Into Light Two", cursive; 
-  font-size:x-large; font-weight:bold; padding:10px; }
+#namediv {font-family:"Boogaloo", sans-serif; 
+  font-size:x-large; font-weight:bold; padding:10px; 
+  text-shadow: 2px 2px 4px #666; }

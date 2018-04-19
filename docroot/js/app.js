@@ -15,9 +15,9 @@ app = (function () {
     //hideous lag occasionally.
     function addFontSupport () {
         var fontlink = document.createElement("link");
-        fontlink.href = "//fonts.googleapis.com/css?family=Open+Sans:400,700";
+        fontlink.href = "//fonts.googleapis.com/css?family=Boogaloo";
         fontlink.rel = "stylesheet";
-        fontlink.type = "text/css";
+        //fontlink.type = "text/css";
         document.getElementsByTagName("head")[0].appendChild(fontlink);
         jt.log("added stylesheet " + fontlink.href);
         fontlink = document.createElement("link");
