@@ -12,7 +12,7 @@ body {
   background-image: url('../img/sitebg.png');
   font-family: "Open Sans", "Helvetica", sans-serif;
   font-size:large;
-  line-height:1.8;
+  line-height:1.2;
 }
 
 A:link {text-decoration:none; color:#803c00; }
@@ -20,6 +20,7 @@ A:visited {text-decoration:none; color:#803c00; }
 A:active {text-decoration:none; color:#803c00; }
 A:hover {text-decoration:underline; color:#ec6e00; }
 
-#namediv {font-family:"Boogaloo", sans-serif; 
-  font-size:x-large; font-weight:bold; padding:10px; 
-  text-shadow: 2px 2px 4px #666; }
+#namediv {font-family:"Boogaloo", sans-serif;
+  font-size:24px; font-weight:bold; padding:10px; display:table;
+  letter-spacing:0.1em; text-shadow: 2px 2px 4px #666;
+  margin-left:-800px; transition:all 1.2s ease-out; }
