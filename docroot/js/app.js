@@ -7,7 +7,8 @@ var app = {},
 app = (function () {
     "use strict";
 
-    var st = {};  //state variables
+    var st = {em:"niko",
+              sechome:"narikostudio.com"};  //state variables
 
     //Sometimes there's a significant lag loading the fonts, and if
     //that is done in the index page then you are just sitting there
@@ -54,14 +55,14 @@ app = (function () {
         wo.cur = Math.max(wo.cur, wo.min);
         //convert to scaled value in the range of 0 to 1
         sv = (wo.cur - wo.min) / (wo.max - wo.min)
-        jt.log("sizeNameToFit sv: " + sv);
+        //jt.log("sizeNameToFit sv: " + sv);
         wo = st.snf.fs;
         wo.cur = wo.min + (sv * (wo.max - wo.min));
-        jt.log("sizeNameToFit fs: " + objvals(wo));
+        //jt.log("sizeNameToFit fs: " + objvals(wo));
         namediv.style.fontSize = wo.cur + "px";
         wo = st.snf.ls;
         wo.cur = wo.min + (sv * (wo.max - wo.min));
-        jt.log("sizeNameToFit ls: " + objvals(wo));
+        //jt.log("sizeNameToFit ls: " + objvals(wo));
         namediv.style.letterSpacing = wo.cur + "em";
         if(st.snf.rti < st.snf.retries.length) {
             st.snf.rti += 1;
@@ -69,10 +70,27 @@ app = (function () {
     }
 
 
+    function showContactInfo () {
+        var div = jt.byId("maildiv"),
+            pc = ["m", "a", "i",   //fuckin bots.  Worth a shot.
+                  "l", "t", "o",
+                  "@"];
+        div.style.marginRight = "0px";
+        div.style.transform = "rotate(0deg)";
+        setTimeout(function () {
+            pc = pc.join("").slice(0, -1) + ":" + st.em + pc[pc.length - 1];
+            pc += st.sechome;
+            jt.log("Activating mail link");
+            div.innerHTML = jt.tac2html(
+                ["a", {href:pc}, div.innerHTML]); }, 1500);
+    }
+
+
     function init () {
         jtminjsDecorateWithUtilities(jt);
         addFontSupport();
         sizeNameToFit();
+        setTimeout(showContactInfo, 1200);
     }
 
 

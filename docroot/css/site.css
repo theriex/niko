@@ -20,7 +20,12 @@ A:visited {text-decoration:none; color:#803c00; }
 A:active {text-decoration:none; color:#803c00; }
 A:hover {text-decoration:underline; color:#ec6e00; }
 
-#namediv {font-family:"Boogaloo", sans-serif;
-  font-size:24px; font-weight:bold; padding:10px; display:table;
+#namediv { position:absolute; left:0px; top:0px; padding:10px; display:table;
+  font-family:"Boogaloo", sans-serif; font-size:24px; font-weight:bold; 
   letter-spacing:0.1em; text-shadow: 2px 2px 4px #666;
   margin-left:-800px; transition:all 1.2s ease-out; }
+
+#maildiv { position:absolute; right:10px; top:60px; 
+  transform:rotate(90deg);
+  margin-right:-100px; transition:all 0.4s ease-out; }
+#maildiv img { max-width:50px; max-height:50px; }
