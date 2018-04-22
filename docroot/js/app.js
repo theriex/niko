@@ -70,7 +70,7 @@ app = (function () {
     }
 
 
-    function showContactInfo () {
+    function showEmailContact () {
         var div = jt.byId("maildiv"),
             pc = ["m", "a", "i",   //fuckin bots.  Worth a shot.
                   "l", "t", "o",
@@ -83,6 +83,32 @@ app = (function () {
             jt.log("Activating mail link");
             div.innerHTML = jt.tac2html(
                 ["a", {href:pc}, div.innerHTML]); }, 1500);
+    }
+
+
+    function externalLinkClick (event) {
+        var src;
+        jt.evtend(event);
+        src = event.target || event.srcElement;
+        if(src) {
+            if(!src.href) {  //event src gives you the img
+                src = src.parentNode; }
+            window.open(src.href); }
+    }
+
+
+    function showInstagramLink () {
+        var div = jt.byId("instdiv"),
+            link = div.children[0];
+        div.style.marginRight = "0px";
+        div.style.transform = "rotate(0deg)";
+        jt.on(link, "click", externalLinkClick);
+    }
+
+
+    function showContactInfo () {
+        showEmailContact();
+        showInstagramLink();
     }
 
 

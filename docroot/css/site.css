@@ -29,3 +29,9 @@ A:hover {text-decoration:underline; color:#ec6e00; }
   transform:rotate(90deg);
   margin-right:-100px; transition:all 0.4s ease-out; }
 #maildiv img { max-width:50px; max-height:50px; }
+
+#instdiv { position:absolute; right:10px; top:120px; 
+  transform:rotate(90deg);
+  margin-right:-100px; transition:all 0.4s ease-out; }
+#instdiv img { max-width:50px; max-height:50px; }
+           
