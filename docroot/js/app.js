@@ -61,6 +61,7 @@ app = (function () {
         //jt.log("sizeNameToFit fs: " + objvals(wo));
         namediv.style.fontSize = wo.cur + "px";
         jt.byId("sitepicsdiv").style.paddingTop = (wo.cur + 50) + "px";
+        jt.byId("bestigdiv").style.paddingTop = (wo.cur + 50) + "px";
         wo = st.snf.ls;
         wo.cur = wo.min + (sv * (wo.max - wo.min));
         //jt.log("sizeNameToFit ls: " + objvals(wo));
@@ -107,11 +108,24 @@ app = (function () {
     }
 
 
+    function toggleDisplayDivs () {
+        var igdiv = jt.byId("bestigdiv"),
+            spdiv = jt.byId("sitepicsdiv");
+        if(!spdiv.style.display || spdiv.style.display === "block") {
+            spdiv.style.display = "none";
+            igdiv.style.display = "block"; }
+        else {
+            spdiv.style.display = "block";
+            igdiv.style.display = "none"; }
+    }
+
+
     function showSiteFlyLink () {
         var div = jt.byId("flydiv"),
-            link = div.children[0];
+            img = div.children[0];
         div.style.marginRight = "0px";
         div.style.transform = "rotate(0deg)";
+        jt.on(img, "click", toggleDisplayDivs);
     }
 
 
