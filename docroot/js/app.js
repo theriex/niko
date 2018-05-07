@@ -60,6 +60,7 @@ app = (function () {
         wo.cur = wo.min + (sv * (wo.max - wo.min));
         //jt.log("sizeNameToFit fs: " + objvals(wo));
         namediv.style.fontSize = wo.cur + "px";
+        jt.byId("sitepicsdiv").style.paddingTop = (wo.cur + 50) + "px";
         wo = st.snf.ls;
         wo.cur = wo.min + (sv * (wo.max - wo.min));
         //jt.log("sizeNameToFit ls: " + objvals(wo));
@@ -106,9 +107,18 @@ app = (function () {
     }
 
 
+    function showSiteFlyLink () {
+        var div = jt.byId("flydiv"),
+            link = div.children[0];
+        div.style.marginRight = "0px";
+        div.style.transform = "rotate(0deg)";
+    }
+
+
     function showContactInfo () {
         showEmailContact();
         showInstagramLink();
+        showSiteFlyLink();
     }
 
 

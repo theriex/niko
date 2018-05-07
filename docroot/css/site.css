@@ -35,3 +35,10 @@ A:hover {text-decoration:underline; color:#ec6e00; }
   margin-right:-100px; transition:all 1.2s ease-out; }
 #instdiv img { max-width:50px; max-height:50px; }
            
+#flydiv { position:absolute; right:10px; top:190px; 
+  transform:rotate(90deg);
+  margin-right:-100px; transition:all 1.8s ease-out; }
+#flydiv img { max-width:50px; max-height:50px; }
+          
+#sitepicsdiv { padding:50px 10px 20px; }
+#sitepicsdiv img { max-width:300px; }
