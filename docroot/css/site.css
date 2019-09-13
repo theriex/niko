@@ -4,41 +4,41 @@ html {
 
 body {
   margin:0px;
-  color:#111111;
+  color:#fff;
+  background:#000;
   height:100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: url('../img/sitebg.png');
   font-family: "Open Sans", "Helvetica", sans-serif;
   font-size:large;
   line-height:1.2;
 }
 
-A:link {text-decoration:none; color:#803c00; }
-A:visited {text-decoration:none; color:#803c00; }
-A:active {text-decoration:none; color:#803c00; }
-A:hover {text-decoration:underline; color:#ec6e00; }
+A:link {text-decoration:none; color:#a0a0ff; }
+A:visited {text-decoration:none; color:#a0a0ff; }
+A:active {text-decoration:none; color:#a0a0ff; }
+A:hover {text-decoration:underline; color:#0000ee; }
 
-#namediv { position:absolute; left:0px; top:0px; padding:10px; display:table;
-  font-family:"Boogaloo", sans-serif; font-size:24px; font-weight:bold; 
-  letter-spacing:0.1em; text-shadow: 2px 2px 4px #666;
-  margin-left:-800px; transition:all 1.2s ease-out; }
+#pageouterdiv { }
+#pageinnerdiv { padding:0px 10px; }
 
-#maildiv { position:absolute; right:10px; top:60px; 
-  transform:rotate(90deg);
-  margin-right:-100px; transition:all 0.8s ease-out; }
-#maildiv img { max-width:50px; max-height:50px; }
+#namediv { font-family:"Lato", sans-serif; font-size:24px; 
+  font-weight:bold; letter-spacing:0.1em; 
+  padding:10px 0px 0px; transition:all 1.2s ease-out; }
 
-#instdiv { position:absolute; right:10px; top:120px; 
-  transform:rotate(90deg);
-  margin-right:-100px; transition:all 1.2s ease-out; }
-#instdiv img { max-width:50px; max-height:50px; }
-           
-#flydiv { position:absolute; right:10px; top:190px; 
-  transform:rotate(90deg);
-  margin-right:-100px; transition:all 1.8s ease-out; }
-#flydiv img { max-width:50px; max-height:50px; }
-          
-#sitepicsdiv { padding:50px 10px 20px; }
-#sitepicsdiv img { max-width:300px; }
+#menulinksdiv { font-family:"Quicksand", sans-serif; font-size:large; 
+  padding:10px 0px; }
+#menulinksdiv div { margin-left:20px; }
+
+#contentdiv { font-size:medium; }
+
+.secpicdiv { }
+
+.sectionclosediv { max-width:300px; text-align:center; }
+
+.idximg { max-width:250px; vertical-align:middle; }
+.dispimg { max-width:300px; vertical-align:middle; 
+  border:1px solid #222; margin:0px 10px 10px 0px; }
+.fullimg { width:100%; }
+
+.arrowspanleft { padding-right:10px; }
+.arrowspanright { padding-left:10px; }
+
