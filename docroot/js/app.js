@@ -5,12 +5,12 @@ var app = {};
 var jt = {};
 var menu = [
     {hash:"windisp", name:"Window Displays", type:"pics", content:[
-        {sec:"1_temp.jpg", pics:[
-            "2.jpg", "5.jpg", "8-798A9322.jpg", "17-798A9402_3_4_5_6_7_8.jpg", 
-            "12-798A9410_1_2.jpg"]},
-        {sec:"etc_windows-71.jpg", pics:[
-            "etc_windows-57.jpg", "etc_windows-17.jpg", "etc_windows-24.jpg", 
-            "etc_windows-2.jpg", "etc_windows-5.jpg"]}]},
+        {sec:"1_temp_1200w.jpg", pics:[
+            "2_1200w.jpg", "5_1200w.jpg", "8-798A9322_1200w.jpg", "17-798A9402_3_4_5_6_7_8_1200w.jpg", 
+            "12-798A9410_1_2_1200w.jpg"]},
+        {sec:"etc_windows-71_1200w.jpg", pics:[
+            "etc_windows-57_1200w.jpg", "etc_windows-17_1200w.jpg", "etc_windows-24_1200w.jpg", 
+            "etc_windows-2_1200w.jpg", "etc_windows-5_1200w.jpg"]}]},
     {hash:"sculpture", name:"Sculpture", type:"pics"},
     //{hash:"events", name:"Events", type:"pics"},
     {hash:"production", name:"Production", type:"pics"},
@@ -86,7 +86,7 @@ app = (function () {
                  ["a", ho, mi.name]]); });
         jt.out("menulinksdiv", html);
         jt.out("contentdiv", jt.tac2html(
-            ["img", {cla:"dispimg", id:"sigpic", src:"img/FlyONSandwich2.jpeg",
+            ["img", {cla:"dispimg", id:"sigpic", src:"img/frontpic_1200w.jpg",
                      onclick:jt.fs("app.togimgexp('sigpic')")}]));
     }
 
