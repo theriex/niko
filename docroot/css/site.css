@@ -30,7 +30,7 @@ A:hover {text-decoration:underline; color:#0000ee; }
 
 #contentdiv { font-size:medium; }
 
-.secpicdiv { }
+.secpicdiv { margin-bottom:5px; }
 
 .sectionclosediv { max-width:300px; text-align:center; }
 

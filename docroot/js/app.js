@@ -21,19 +21,21 @@ var menu = [
         {sec:"IMG_0713_1200w.jpeg",
          pics:["IMG_0702_1200w.jpeg",
                "IMG_0704_1200w.jpeg",
-               "IMG_0706_1200w.jpeg",
-               "brondo_1200w.jpg",
+               "IMG_0706_1200w.jpeg"]},
+        {sec:"frontpic_1200w.jpg",
+         pics:["pencil_1200w.jpg",
                "chips_1200w.jpg",
-               "clock_1200w.jpg",
                "dogfood_1200w.jpg",
+               "brondo_1200w.jpg",
+               "clock_1200w.jpg",
                "eggtoast_1200w.jpg",
-               "flyswatter_1200w.jpg",
-               "multipassback_1200w.jpg",
                "multipassfront_1200w.jpg",
+               "multipassback_1200w.jpg",
                "pear_1200w.jpg",
-               "pencil_1200w.jpg",
+               "sandwich2_1200w.jpg",
                "sandwich1_1200w.jpg",
-               "sandwich2_1200w.jpg"]}]},
+               "FlyONSandwich2.jpeg",
+               "flyswatter_1200w.jpg"]}]},
     //{hash:"events", name:"Events", type:"pics"},
     {hash:"production", name:"Production", type:"pics"},
     {hash:"bio", name:"Bio", type:"pages", file:"bio.html"},
@@ -108,7 +110,8 @@ app = (function () {
                  ["a", ho, mi.name]]); });
         jt.out("menulinksdiv", html);
         jt.out("contentdiv", jt.tac2html(
-            ["img", {cla:"dispimg", id:"sigpic", src:"img/frontpic_1200w.jpg",
+            ["img", {cla:"dispimg", id:"sigpic", 
+                     src:"img/sculpture/FlyONSandwich2.jpeg",
                      onclick:jt.fs("app.togimgexp('sigpic')")}]));
     }
 
